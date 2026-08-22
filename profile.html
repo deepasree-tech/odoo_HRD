@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <a href="emp.dashboard.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<main class="profile-page">
+
+    <h1>My Profile</h1>
+
+
+    <section class="profile-card">
+
+        <div class="profile-picture">
+
+            <div class="avatar">
+                👤
+            </div>
+
+            <label for="profilePicture">
+                Profile Picture
+            </label>
+
+            <input
+                type="file"
+                id="profilePicture"
+                accept="image/*"
+            >
+
+        </div>
+
+
+        <form id="profileForm">
+
+            <h2>Personal Details</h2>
+
+
+            <label for="profileEmployeeId">
+                Employee ID
+            </label>
+
+            <input
+                type="text"
+                id="profileEmployeeId"
+                value="EMP001"
+                disabled
+            >
+
+
+            <label for="profileName">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="profileName"
+                placeholder="Enter full name"
+            >
+
+
+            <label for="profileEmail">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="profileEmail"
+                placeholder="Enter email"
+            >
+
+
+            <label for="phone">
+                Phone
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+            >
+
+
+            <label for="address">
+                Address
+            </label>
+
+            <textarea
+                id="address"
+                placeholder="Enter address"
+            ></textarea>
+
+
+            <h2>Job Details</h2>
+
+
+            <label for="position">
+                Job Position
+            </label>
+
+            <input
+                type="text"
+                id="position"
+                value="Software Developer"
+                disabled
+            >
+
+
+            <label for="department">
+                Department
+            </label>
+
+            <input
+                type="text"
+                id="department"
+                value="Technology"
+                disabled
+            >
+
+
+            <label for="joiningDate">
+                Joining Date
+            </label>
+
+            <input
+                type="text"
+                id="joiningDate"
+                value="01-Jan-2026"
+                disabled
+            >
+
+
+            <h2>Salary Structure</h2>
+
+
+            <label for="salary">
+                Monthly Salary
+            </label>
+
+            <input
+                type="text"
+                id="salary"
+                value="₹45,000"
+                disabled
+            >
+
+
+            <h2>Documents</h2>
+
+
+            <label for="documents">
+                Upload Documents
+            </label>
+
+            <input
+                type="file"
+                id="documents"
+                multiple
+            >
+
+
+            <button type="submit">
+                Save Changes
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

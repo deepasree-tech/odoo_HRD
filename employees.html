@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Employees</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <a href="admin.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<main class="employees-page">
+
+    <h1>Employee Management</h1>
+
+
+    <section class="employee-controls">
+
+        <input
+            type="search"
+            id="employeeSearch"
+            placeholder="Search employee..."
+        >
+
+        <button id="addEmployeeButton">
+            Add Employee
+        </button>
+
+    </section>
+
+
+    <section class="employee-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Job</th>
+                    <th>Department</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="employeeTableBody">
+
+                <tr>
+
+                    <td>EMP001</td>
+                    <td>Employee One</td>
+                    <td>employee1@gmail.com</td>
+                    <td>Developer</td>
+                    <td>Technology</td>
+
+                    <td>
+                        <button class="viewEmployee">
+                            View
+                        </button>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>EMP002</td>
+                    <td>Employee Two</td>
+                    <td>employee2@gmail.com</td>
+                    <td>Designer</td>
+                    <td>Design</td>
+
+                    <td>
+                        <button class="viewEmployee">
+                            View
+                        </button>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>EMP003</td>
+                    <td>Employee Three</td>
+                    <td>employee3@gmail.com</td>
+                    <td>Tester</td>
+                    <td>Testing</td>
+
+                    <td>
+                        <button class="viewEmployee">
+                            View
+                        </button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

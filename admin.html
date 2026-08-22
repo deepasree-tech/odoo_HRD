@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <div class="header-user">
+
+        <span>Admin / HR</span>
+
+        <button id="logoutButton">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="sidebar">
+
+        <nav>
+
+            <a href="admin.html">
+                Dashboard
+            </a>
+
+            <a href="employees.html">
+                Employees
+            </a>
+
+            <a href="admin-attendance.html">
+                Attendance
+            </a>
+
+            <a href="leave-approval.html">
+                Leave Approvals
+            </a>
+
+            <a href="admin-payroll.html">
+                Payroll
+            </a>
+
+            <a href="reports.html">
+                Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+        <h1>Admin / HR Dashboard</h1>
+
+        <p>
+            Manage employees and HR operations.
+        </p>
+
+
+        <section class="admin-summary">
+
+            <div class="admin-card">
+                <h3>Total Employees</h3>
+                <p>50</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>Present Today</h3>
+                <p>42</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>Pending Leaves</h3>
+                <p>5</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>Payroll Employees</h3>
+                <p>50</p>
+            </div>
+
+        </section>
+
+
+        <section class="recent-leaves">
+
+            <h2>Recent Leave Requests</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Employee</th>
+                        <th>Leave Type</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Employee One</td>
+                        <td>Paid Leave</td>
+                        <td>25-Aug-2026</td>
+                        <td>
+                            <span class="pending">
+                                Pending
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Employee Two</td>
+                        <td>Sick Leave</td>
+                        <td>26-Aug-2026</td>
+                        <td>
+                            <span class="pending">
+                                Pending
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Attendance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <a href="emp.dashboard.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<main class="attendance-page">
+
+    <h1>Attendance Management</h1>
+
+
+    <section class="attendance-actions">
+
+        <button id="checkInButton">
+            Check In
+        </button>
+
+        <button id="checkOutButton">
+            Check Out
+        </button>
+
+    </section>
+
+
+    <section class="attendance-filter">
+
+        <label for="attendanceView">
+            View Attendance
+        </label>
+
+        <select id="attendanceView">
+
+            <option value="daily">
+                Daily
+            </option>
+
+            <option value="weekly">
+                Weekly
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <section class="attendance-summary">
+
+        <div class="summary-card">
+            <h3>Present</h3>
+            <p>18</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>Absent</h3>
+            <p>2</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>Half-day</h3>
+            <p>1</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>Leave</h3>
+            <p>3</p>
+        </div>
+
+    </section>
+
+
+    <section class="attendance-table">
+
+        <h2>Attendance Records</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Date</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>22-Aug-2026</td>
+                    <td>09:05 AM</td>
+                    <td>05:30 PM</td>
+                    <td>
+                        <span class="status present">
+                            Present
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>21-Aug-2026</td>
+                    <td>09:10 AM</td>
+                    <td>05:25 PM</td>
+                    <td>
+                        <span class="status present">
+                            Present
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>20-Aug-2026</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <span class="status leave">
+                            Leave
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>19-Aug-2026</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <span class="status absent">
+                            Absent
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>18-Aug-2026</td>
+                    <td>09:00 AM</td>
+                    <td>01:00 PM</td>
+                    <td>
+                        <span class="status half-day">
+                            Half-day
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

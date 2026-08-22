@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Leave Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <a href="emp.dashboard.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<main class="leave-page">
+
+    <h1>Leave & Time-Off Management</h1>
+
+
+    <section class="leave-form">
+
+        <h2>Apply for Leave</h2>
+
+        <form id="leaveForm">
+
+            <label for="leaveType">
+                Leave Type
+            </label>
+
+            <select id="leaveType" required>
+
+                <option value="">
+                    Select Leave Type
+                </option>
+
+                <option value="paid">
+                    Paid Leave
+                </option>
+
+                <option value="sick">
+                    Sick Leave
+                </option>
+
+                <option value="unpaid">
+                    Unpaid Leave
+                </option>
+
+            </select>
+
+
+            <label for="fromDate">
+                From Date
+            </label>
+
+            <input
+                type="date"
+                id="fromDate"
+                required
+            >
+
+
+            <label for="toDate">
+                To Date
+            </label>
+
+            <input
+                type="date"
+                id="toDate"
+                required
+            >
+
+
+            <label for="remarks">
+                Remarks
+            </label>
+
+            <textarea
+                id="remarks"
+                placeholder="Enter reason for leave"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Submit Leave Request
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section class="leave-requests">
+
+        <h2>My Leave Requests</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Leave Type</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Remarks</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Paid Leave</td>
+                    <td>25-Aug-2026</td>
+                    <td>26-Aug-2026</td>
+                    <td>Personal Work</td>
+
+                    <td>
+                        <span class="pending">
+                            Pending
+                        </span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Sick Leave</td>
+                    <td>10-Aug-2026</td>
+                    <td>11-Aug-2026</td>
+                    <td>Sick</td>
+
+                    <td>
+                        <span class="approved">
+                            Approved
+                        </span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Unpaid Leave</td>
+                    <td>05-Aug-2026</td>
+                    <td>05-Aug-2026</td>
+                    <td>Personal</td>
+
+                    <td>
+                        <span class="rejected">
+                            Rejected
+                        </span>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

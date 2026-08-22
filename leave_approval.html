@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Leave Approvals</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <a href="admin.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<main class="approval-page">
+
+    <h1>Leave Approvals</h1>
+
+
+    <section class="approval-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Employee</th>
+                    <th>Leave Type</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Remarks</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Employee One</td>
+                    <td>Paid Leave</td>
+                    <td>25-Aug-2026</td>
+                    <td>26-Aug-2026</td>
+                    <td>Personal Work</td>
+
+                    <td>
+                        <span class="pending">
+                            Pending
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="approve">
+                            Approve
+                        </button>
+
+                        <button class="reject">
+                            Reject
+                        </button>
+
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Employee Two</td>
+                    <td>Sick Leave</td>
+                    <td>22-Aug-2026</td>
+                    <td>23-Aug-2026</td>
+                    <td>Sick</td>
+
+                    <td>
+                        <span class="approved">
+                            Approved
+                        </span>
+                    </td>
+
+                    <td>
+                        Completed
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <section class="comment-box">
+
+        <h2>HR Comment</h2>
+
+        <textarea
+            id="approvalComment"
+            placeholder="Add comment">
+        </textarea>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

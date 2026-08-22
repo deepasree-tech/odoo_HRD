@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayflow - Admin Attendance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Dayflow</div>
+
+    <a href="admin.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<main class="admin-attendance-page">
+
+    <h1>Attendance Records</h1>
+
+
+    <section class="filters">
+
+        <input
+            type="date"
+            id="attendanceDate"
+        >
+
+        <select id="employeeFilter">
+
+            <option value="">
+                All Employees
+            </option>
+
+            <option value="EMP001">
+                EMP001
+            </option>
+
+            <option value="EMP002">
+                EMP002
+            </option>
+
+            <option value="EMP003">
+                EMP003
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <section class="attendance-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Date</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>EMP001</td>
+                    <td>Employee One</td>
+                    <td>22-Aug-2026</td>
+                    <td>09:05 AM</td>
+                    <td>05:30 PM</td>
+                    <td>
+                        <span class="status present">
+                            Present
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>EMP002</td>
+                    <td>Employee Two</td>
+                    <td>22-Aug-2026</td>
+                    <td>09:20 AM</td>
+                    <td>05:25 PM</td>
+                    <td>
+                        <span class="status present">
+                            Present
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>EMP003</td>
+                    <td>Employee Three</td>
+                    <td>22-Aug-2026</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <span class="status absent">
+                            Absent
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

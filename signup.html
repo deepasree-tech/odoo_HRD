@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayflow - Sign Up</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="signup-container">
+
+    <div class="signup-box">
+
+        <div class="logo">
+            Dayflow
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p>Register for Dayflow HRMS</p>
+
+        <form id="signupForm">
+
+            <label for="employeeId">
+                Employee ID
+            </label>
+
+            <input
+                type="text"
+                id="employeeId"
+                placeholder="Enter Employee ID"
+                required
+            >
+
+            <label for="signupEmail">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Enter Email"
+                required
+            >
+
+            <label for="signupPassword">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Create Password"
+                required
+            >
+
+            <label for="signupRole">
+                Role
+            </label>
+
+            <select id="signupRole" required>
+
+                <option value="">
+                    Select Role
+                </option>
+
+                <option value="employee">
+                    Employee
+                </option>
+
+                <option value="hr">
+                    HR Officer
+                </option>
+
+            </select>
+
+            <div class="verification">
+
+                <input
+                    type="checkbox"
+                    id="emailVerification"
+                    required
+                >
+
+                <label for="emailVerification">
+                    I confirm my email address
+                </label>
+
+            </div>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+            <p id="signupMessage"></p>
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="signin.html">Sign In</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
